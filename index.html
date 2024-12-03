@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Mi primer página Web</title>
   </head>
   <body>
     <header>
-      <h1>Mis gustos cinematográficos</h1>
+      <h1 id="centrado" class="titulo">MIS GUSTOS CINEMATROGRÁFICOS</h1>
     </header>
 
     <main>
       <section>
-        <h2>
-          En esta página web hablaré acerca de mis gustos cinematográficos, ya
-          sea en peliculas o series.
+        <h2 id="centrado">
+          En esta página web hablaré sobre mis preferencias cinematográficas,
+          tanto en películas como en series.
         </h2>
 
         <hr />
@@ -23,7 +24,7 @@
         <article>
           <div>
             <ul>
-              <li>Ciencia ficción</li>
+              <li class="generos">Ciencia ficción</li>
             </ul>
             <p>
               Me gustan las series y películas de ciencia ficción porque nos
@@ -37,7 +38,7 @@
         <article>
           <div>
             <ul>
-              <li>Drama</li>
+              <li class="generos">Drama</li>
             </ul>
             <p>
               Las películas de drama muestran historias intensas y emocionales
@@ -49,7 +50,7 @@
         <article>
           <div>
             <ul>
-              <li>Acción</li>
+              <li class="generos">Acción</li>
             </ul>
             <p>
               Me encantan las películas de acción porque siempre tienen escenas
@@ -57,31 +58,39 @@
             </p>
           </div>
         </article>
+
         <hr />
 
-        <h4>Listado de peliculas/series favoritas:</h4>
-        <ol>
-          <li>
+        <h4 id="centrado">PELICULAS/SERIES FAVORITAS:</h4>
+        <div id="movies-container">
+          <div class="movies">
             <h4>Breaking Bad</h4>
             <img
+              class="pictures"
               src="breaking_bad.jpg"
               width="300"
               alt="Imagen de Breaking Bad"
             />
-          </li>
-          <li>
+          </div>
+          <div class="movies">
             <h4>Marvel</h4>
-            <img src="marvel.jpg" width="300" alt="Logo de Marvel" />
-          </li>
-          <li>
+            <img
+              class="pictures"
+              src="marvel.jpg"
+              width="300"
+              alt="Logo de Marvel"
+            />
+          </div>
+          <div class="movies">
             <h4>Interestelar</h4>
             <img
+              class="pictures"
               src="interestelar.jpg"
               width="300"
               alt="Imagen de Interestelar"
             />
-          </li>
-        </ol>
+          </div>
+        </div>
       </section>
     </main>
     <hr />
